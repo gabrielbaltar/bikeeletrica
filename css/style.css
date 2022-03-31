@@ -1,86 +1,46 @@
 /* Estilizando o menu com background preto */
-body {
-  margin: 0px;
-  box-sizing: border-box;
-}
 
-ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
+/* global e header (Menu do site) */
 
-.header-bg {
-  background: #000;
-}
+@import "/css/global/global.css";
+@import "/css/global/header.css";
+@import "/css/global/footer.css";
 
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-  align-items: center;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* Utilitáios que serão utilizados em todo o site */
+@import "/css/utilidades/tipografia.css";
+@import "/css/utilidades/componentes.css";
+@import "/css/utilidades/cores.css";
+@import "/css/utilidades/formulario.css";
 
-.header-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
+/* Home */
+@import "/css/home/introducao.css";
+@import "/css/home/tecnologia.css";
+@import "/css/home/parceiros.css";
+@import "/css/home/depoimento.css";
 
-.header-menu a {
-  padding: 16px 0px;
-  display: inline-block;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 18px;
-}
+/* Bicicletas */
+@import "/css/bicicletas/bicicletas-lista.css";
+@import "/css/bicicletas/bicicletas.css";
+@import "/css/bicicleta/seguro.css";
 
-.header-menu a:after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 0px;
-  background: #ffffff;
-  margin-top: 0px;
-  transition: 0.3s;
-}
+/* Bicicleta */
+@import "/css/bicicleta/bicicleta.css";
 
-.header-menu a:hover:after {
-  width: 100%;
-}
+/* Seguros */
+@import "/css/seguros/seguros.css";
+@import "/css/seguros/vantagens.css";
+@import "/css/seguros/perguntas.css";
 
-@media (max-width: 800px) {
-  .header-menu {
-    gap: 20px;
-  }
+/* Contato */
+@import "/css/contato/contato.css";
+@import "/css/contato/loja.css";
 
-  .header-menu a {
-    background: #111111;
-    padding: 12px 16px;
-    border-radius: 4px;
-    gap: 20px;
-  }
+/* Termos */
+@import "/css/termos/termos.css";
 
-  .header-menu a:hover {
-    background: #2e2e2e;
-  }
+/* Orçamento */
+@import "/css/orcamento/orcamento.css";
 
-  .header-menu a:after {
-    display: none;
-  }
-}
+/* Animações */
 
-@media (max-width: 600px) {
-  .header-menu {
-    gap: 12px;
-  }
-
-  .header-menu a {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-}
+@import "/css/utilidades/animacao.css";
